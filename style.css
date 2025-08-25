@@ -9,6 +9,8 @@ body{
     align-items: center;
 }
 .container{
+    width: 90%;
+    max-width: 470px;
     padding-top: 30px;
     display: flex;
     flex-direction: column;
@@ -18,7 +20,7 @@ body{
     color: white;
     padding: 10px;
 }
-.city{
+.search{
     padding: 22px 1px;
     height: 40px;
     width: 500px;
@@ -28,7 +30,7 @@ body{
     align-items: center;
     border-radius: 20px;
 }
-.city input{
+.search input{
     margin: 5px;
     padding: 18px;
     width: 350px;
@@ -38,7 +40,7 @@ body{
     line-height: 1.2;
     font-weight: 500;
 }
-.city i{
+.search i{
     background-color: aqua;
     color: white;
     height: 40px;
@@ -48,4 +50,7 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 7px;
+}
+img{
+    height: 40px;
 }
