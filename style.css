@@ -1,14 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: aqua;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.container{
+
+.container {
     width: 90%;
     max-width: 470px;
     padding-top: 30px;
@@ -16,21 +18,28 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.heading{
+
+.heading {
     color: white;
     padding: 10px;
 }
-.search{
+
+h1 {
+    line-height: 2;
+}
+
+.search {
     padding: 22px 1px;
     height: 40px;
     width: 500px;
     background-color: white;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
 }
-.search input{
+
+.search input {
     margin: 5px;
     padding: 18px;
     width: 350px;
@@ -40,7 +49,8 @@ body{
     line-height: 1.2;
     font-weight: 500;
 }
-.search i{
+
+.search i {
     background-color: aqua;
     color: white;
     height: 40px;
@@ -51,6 +61,91 @@ body{
     align-items: center;
     border-radius: 7px;
 }
-img{
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.details {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    width: 100%;
+
+}
+
+.details div {
+    flex: 1 1 45%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    transition: none;
+}
+
+.details div:hover {
+    transform: none;
+}
+
+.details img {
+    width: 40px;
     height: 40px;
+}
+
+.details p {
+    margin: 0;
+    line-height: 3.0;
+}
+
+.details p:first-child {
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+}
+
+.details p:last-child {
+    font-size: 14px;
+    color: #777;
+}
+
+.details .humidity {
+    color: #00796B;
+    background-color: #e0f7fa;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.details .wind-speed {
+    background-color: #fff3e0;
+    color: #e65100;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.details .pressure {
+    background-color: #e8f5e9;
+    color: #388e3c;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.details .visibility {
+    background-color: #f3e5f5;
+    color: #6a1b9a;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
