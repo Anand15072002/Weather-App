@@ -39,7 +39,9 @@ async function checkWeather(city) {
     }
 
 }
-
+window.addEventListener("load", ()=>{
+    checkWeather("Delhi");
+});
 
 searchBtn.addEventListener("click", () => {
     checkWeather(searchBox.value);
